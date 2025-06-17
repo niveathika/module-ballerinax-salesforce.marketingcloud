@@ -23,3 +23,11 @@ The following command was used to generate the Ballerina client from the OpenAPI
 bal openapi -i docs/spec/openapi.json -o ballerina --mode client --client-methods remote --license docs/license.txt
 ```
 Note: The license year is hardcoded to 2025, change if necessary.
+
+## Sanitation for Generated Client
+
+The following modifications were made to the generated client to support multi-tenancy in the Marketing Cloud APIs:
+
+1. The client parameter `serviceUrl` was renamed to `subDomain` to better represent tenant-specific endpoints.
+2. The `serviceUrl` and `tokenUrl` values are now dynamically constructed within the `init` method using the provided `subDomain`.
+3. The authentication configuration in `types.bal` (`OAuth2ClientCredentialsGrantConfig`) was updated to allow overriding the `credentialBearer` property, enabling tenant-specific credential management. 
