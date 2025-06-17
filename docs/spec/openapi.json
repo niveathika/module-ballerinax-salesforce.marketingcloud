@@ -1089,11 +1089,14 @@
         "required" : [ "ContactKey" ],
         "type" : "object",
         "properties" : {
-          "ContactKey" : {
-            "type" : "string",
-            "description" : "The unique key that identifies the contact",
-            "x-ballerina-name" : "contactKey"
-          }
+            "ContactKeyList" : {
+            "type" : "array",
+            "description" : "The list of unique keys that identify the contacts",
+            "items" : {
+              "type" : "string"
+            },
+            "x-ballerina-name" : "contactKeyList"
+            }
         },
         "example" : {
           "ContactKeyList" : [ "DD301", "0036A000002FDbFQAW" ]

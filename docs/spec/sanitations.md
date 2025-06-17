@@ -20,6 +20,6 @@ While the Postman collection provided a solid foundation, it was missing paramet
 The following command was used to generate the Ballerina client from the OpenAPI specification. The command should be executed from the repository root directory.
 
 ```bash
-# TODO: Add OpenAPI CLI command used to generate the client
+bal openapi -i docs/spec/openapi.json -o ballerina --mode client --client-methods remote --license docs/license.txt
 ```
 Note: The license year is hardcoded to 2025, change if necessary.
