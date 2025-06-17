@@ -1,14 +1,20 @@
 # Examples
 
-The `ballerinax/salesforce.marketingcloud` connector provides practical examples illustrating usage in various scenarios.
+The `ballerinax/salesforce.marketingcloud` connector provides practical examples illustrating usage in various scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-salesforce.marketingcloud/tree/main/examples) to understand how to capture and process database change events effectively.
 
-[//]: # (TODO: Add examples)
-1. 
-2. 
+1. [Welcome Journey](https://github.com/ballerina-platform/module-ballerinax-salesforce.marketingcloud/tree/main/examples/welcome-journey) - Demonstrates how to enroll new users into the Welcome Journey. It includes additional checks to ensure that users are not enrolled more than once, preventing duplicate enrollments in the journey.
 
 ## Prerequisites
 
-[//]: # (TODO: Add prerequisites)
+1. Follow instructions to set up OAuth2 app in Salesforce Marketing Cloud.
+
+2. For each example, create a config.toml file with your OAuth2 tokens, client ID, and client secret. Here's an example of how your config.toml file should look:
+```toml
+clientId = "<client-id>"
+clientSecret = "<client-secret>"
+subDomain = "<sub-domain>"
+```
+
 
 ## Running an example
 
